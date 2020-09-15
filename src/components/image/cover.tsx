@@ -5,14 +5,13 @@ import classNames from 'classnames';
 import styles from './style/cover.less';
 
 export interface CoverProps extends LinkImageProps {
-
-  size?: 'small' | 'normal' | 'large';
+  size?: 'small' | 'normal' | 'large' | 'default';
 }
 
 
 export default function Cover(props: CoverProps) {
   const className = classNames(props.className, getCoverSize(props));
-  const nextProps = { ...props, preview: false, className };
+  const nextProps = { ...props, preview: props.preview ?? false, className };
   return (
     <LinkImage {...nextProps} />
   );
@@ -21,13 +20,13 @@ export default function Cover(props: CoverProps) {
 
 function getCoverSize(props: CoverProps): string {
   const coverSize = {
-    defaultSize: 'size-default',
+    default: 'size-default',
     small: 'size-small',
     normal: 'size-normal',
     large: 'size-large',
   };
   if (!props.size) {
-    return styles[coverSize.defaultSize];
+    return styles[coverSize.default];
   }
 
   return styles[coverSize[props.size]];

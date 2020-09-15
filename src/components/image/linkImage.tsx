@@ -18,9 +18,11 @@ export default class LinkImage extends PureComponent<LinkImageProps, BaseState> 
   render() {
     const a = {
       ...(this.props as AnchorHTMLAttributes<any>),
-      className: classNames(this.props.className,
+      className: classNames(
+        styles.a,
         this.props.link ? styles.link : styles.unlink,
-        styles.divWrapper),
+        this.props.className,
+      ),
       href: this.props.link
     };
     return <a {...a}>

@@ -43,8 +43,8 @@ export default (props: any, state: any) => {
         </Carousel>
       </Col>
       <Col span={4}>
-        <Cover  src={require('../assets/1.jpeg')} style={{ width: '10px', height: '10px' }}/>
-        <Image src={require('../assets/1.jpeg')} style={{ width: 10, height: 10 }} />
+        <Cover src={require('../assets/1.jpeg')} style={{width: 20, height: 20}}/>
+        <Image src={require('../assets/1.jpeg')}/>
       </Col>
     </Row>
   );
