@@ -1,4 +1,4 @@
-# umi project
+# Spring Book View
 
 ## Getting Started
 
