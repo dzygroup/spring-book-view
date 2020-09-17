@@ -1,0 +1,44 @@
+@import '../../style/index';
+
+@book-item: ~'@{app-prefix}-book-item';
+@book-item-horizontal: ~'@{book-item}-horizontal';
+@book-item-vertical: ~'@{book-item}-vertical';
+
+
+.@{book-item-vertical} {
+  display: inline-block;
+  position: relative;
+
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  & > * {
+    display: block;
+  }
+}
+
+.@{book-item-horizontal} {
+  display: inline-block;
+  position: relative;
+
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  & > * {
+    display: inline-block;
+  }
+
+  & > div {
+    position: relative;
+    top: 0px;
+    height: 100%;
+  }
+
+  //& > div:last-child {
+  //  vertical-align: bottom;
+  //}
+}

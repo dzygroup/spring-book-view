@@ -1,3 +1,4 @@
+
 *, ul, li, ol, li {
   list-style: none;
   text-decoration: none;
@@ -12,13 +13,72 @@
 .carousel {
   margin: auto;
   width: 740px;
-  height: 500px;
+  //height: 500px;
 }
 
 .fans {
 }
 
 .image {
-  width: 20px;
-  height: 20px;
+  width: 100px;
+  height: 100px;
+  line-height: $height;
+  vertical-align: middle;
+  display: block;
+}
+
+.bookItem {
+  text-decoration: none;
+  //color: black;
+  font-weight: normal;
+  font-size: 1.2em;
+  padding: 0px;
+  margin: 0px;
+  height: 25px;
+  line-height: $height;
+  vertical-align: middle;
+}
+
+.otherRow {
+  .row();
+  margin-top: 50px;
+}
+
+.tag {
+  .row();
+  margin-top: 50px;
+}
+
+.emptyLine {
+  margin-top: 50px;
+}
+
+
+.sb-image-list ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imageList {
+  vertical-align: middle;
+}
+.imageList>*:not(:first-child) {
+  padding-top: 10px;
+}
+
+.imageListItem {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  width: 100px;
+  padding: 0px 5px 0px;
+  height: 130px;
+  line-height: $height;
+}
+
+.imageListTitle {
+  padding: 12px 0px 12px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  margin: 0px;
 }
