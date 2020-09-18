@@ -5,3 +5,7 @@ export interface BaseProps extends BasicProps {
 }
 
 export type BaseState = ComponentState;
+
+export interface ComposeProps extends BaseProps {
+
+}

@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './index.less';
+import styles from './style/index.less';
 import { Carousel, Col, Row, List, Image } from 'antd';
-import './index.less';
+import './style/index.less';
 import classNames from 'classnames';
 import { ImageProps } from 'rc-image';
 import { BaseProps } from '@/components/_util/types';
